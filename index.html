@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo | Despliegue Automático en GitHub Pages</title>
+  <meta name="description" content="Página web moderna Hola Mundo con integración y despliegue continuo automatizado en GitHub Pages.">
+  <meta name="author" content="Isaac Cabrera Silverio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient-background">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <div class="app-container">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-icon">🚀</span>
+        <span class="brand-text">CloudDeploy<strong>Hub</strong></span>
+      </div>
+      <div class="status-badge" id="live-status">
+        <span class="status-dot"></span>
+        <span class="status-label">En vivo en GitHub Pages</span>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-card">
+        <div class="hero-badge">
+          <span>⚡ Integración y Despliegue Continuo (CI/CD)</span>
+        </div>
+
+        <h1 class="main-title" id="greeting-title">
+          ¡Hola, <span class="gradient-text">Mundo!</span>
+        </h1>
+
+        <p class="hero-description" id="greeting-desc">
+          Esta es una aplicación web desplegada automáticamente en la nube desde GitHub. Cada cambio enviado mediante un <code class="code-inline">git push</code> se compila y publica de manera instantánea y sin fricciones.
+        </p>
+
+        <div class="interactive-actions">
+          <button class="btn btn-primary" id="btn-greet">
+            <span class="btn-icon">✨</span>
+            <span class="btn-text">Generar Saludo Global</span>
+          </button>
+          <a href="https://github.com/Isak1956x/hola-mundo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <span class="btn-icon">📂</span>
+            <span>Ver Repositorio</span>
+          </a>
+        </div>
+
+        <div class="greeting-display" id="greeting-box">
+          <span class="greeting-lang" id="lang-tag">Idioma: Español</span>
+          <p class="greeting-quote" id="quote-text">"El primer paso de todo gran desarrollador comienza con un simple Hola Mundo."</p>
+        </div>
+      </section>
+
+      <section class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">☁️</div>
+          <h3>Hosting en la Nube</h3>
+          <p>Alojada de forma global en la red perimetral (CDN) de GitHub Pages con certificado SSL/HTTPS automático y alta disponibilidad.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Automatización Git</h3>
+          <p>Flujo de integración continua: detecta commits en la rama <code class="code-inline">main</code> e implementa las actualizaciones en segundos.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Cero Mantenimiento</h3>
+          <p>Arquitectura serverless estática de alto rendimiento, optimizada para velocidad instantánea y máxima seguridad.</p>
+        </article>
+      </section>
+
+      <section class="pipeline-section">
+        <h2 class="section-title">¿Cómo funciona el flujo automático?</h2>
+        <div class="pipeline-stepper">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Código Local</h4>
+              <p>Edición de archivos en el entorno de desarrollo.</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Git Push</h4>
+              <p>Envío al repositorio remoto en GitHub.</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>GitHub Actions</h4>
+              <p>Pipeline ejecuta build y verificación en la nube.</p>
+            </div>
+          </div>
+          <div class="step-arrow">➔</div>
+          <div class="step-item step-highlight">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Despliegue Vivo</h4>
+              <p>Disponible en <code class="code-inline">github.io</code> para todo el mundo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <div class="footer-info">
+        <p>Desarrollado con ❤️ por <strong>Isaac Cabrera Silverio</strong></p>
+        <p class="footer-meta">Repositorio: <a href="https://github.com/Isak1956x/hola-mundo" target="_blank" rel="noopener noreferrer">github.com/Isak1956x/hola-mundo</a></p>
+      </div>
+      <div class="footer-time">
+        <span id="system-time">Cargando fecha y hora...</span>
+      </div>
+    </footer>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
